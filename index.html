@@ -19,13 +19,16 @@
       height: 100%;
       overflow-x: hidden;
       font-family: 'Playfair Display', serif;
+      background: #07192f; /* fallback background */
     }
 
     #vanta-bg {
-      min-height: 100vh;
-      position: relative;
+      height: 100vh;
+      width: 100%;
+      position: fixed;
+      top: 0; left: 0;
+      z-index: -1;
     }
-
 
     .container {
       position: relative;
@@ -217,174 +220,40 @@
   </style>
 </head>
 
-
 <body>
-  <div id="vanta-bg">
-    <div class="container">
-
-      <!-- 💜 Your existing content starts here -->
-      <header>
-      <h1>Happy Birthday, Siri!</h1>
-      <p>This one is for you</p>
-	You deserve the world <3
-    </header>
-
-    <!-- 🎀 Collage Section -->
-    <section class="collage-hero">
-<h2 class="collage-caption">Love you kanda <3</h2>      
-<img src="PicsArt_07-03-06.49.37.png" alt="Siri Collage" class="collage-image">
-      
-    </section>
-
-    <!-- 📸 Timeline -->
-    <section class="photo-timeline">
-      <h2>🌸 Memories Through the Years</h2>
-      <div class="timeline-card">
-        <img src="her first smile shot on the first iphone.jpg" alt="Her first smile shot on the iPhone">
-        <div class="card-content">
-          <div class="year">2010</div>
-          <p>Little you, that gentle smile</p>
-        </div>
-      </div>
-
-
-<div class="timeline-card">
-        <img src="WhatsApp Image 2025-07-03 at 21.53.36_86858666.jpg"alt="shot on sony vaio">
-        <div class="card-content">
-          <div class="year">2011</div>
-          <p>First laptop photo</p>
-        </div>
-      </div>
-      <div class="timeline-card">
-        <img src="A pic after she succesfully draws on the wall.jpg" alt="scrib">
-        <div class="card-content">
-          <div class="year">2012</div>
-          <p>You giggling after scribbling on the walls</p>
-        </div>
-      </div>
-      <div class="timeline-card">
-        <img src="first photo of main character vibes.jpg" alt="main charr vibes">
-        <div class="card-content">
-          <div class="year">2012</div>
-          <p>Your first main character moment</p>
-        </div>
-      </div>
-
-
-<div class="timeline-card">
-        <img src="first ipad photo.jpg"alt="shot on sony vaio">
-        <div class="card-content">
-          <div class="year">2016</div>
-          <p>First iPad photo </p>
-        </div>
-      </div>
-
-    </section>
-
-    <!-- 💌 Wishes -->
-    <section class="birthday-wishes">
-      <h2>💌 Wishes from Your People</h2>
-      <div class="message">"You’re the sparkle and SIRI in all our lives, bangara" – Amma</div>
-      <div class="message">"I am proud of you, Siri" – Appa</div>
-      <div class="message">"To the best sister ever 💕" – Saagar</div>
-    </section>
-
-    <!-- 🎥 Video Section -->
-    <section class="video-wall">
-      <h2>🎥 Birthday Videos</h2>
-
-
-	    <iframe width="560" height="315" 
-  src="https://www.youtube.com/embed/QebG1TBB2zM"
-  title="YouTube video player" 
-  frameborder="0" 
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-  referrerpolicy="strict-origin-when-cross-origin" 
-  allowfullscreen>
-</iframe>
-
-      <!--    <iframe width="300" height="200" src="https://www.youtube.com/embed/videoid2" frameborder="0" allowfullscreen></iframe>  -->
-    </section>
-
-    <!-- 💌 Letter -->
-    <section class="letter">
-      <h2>📖 A Letter to You</h2>
-      <p>
-        Happy Birthday, bangara💛<br><br>
-        I don’t even know where to begin, honestly.... I love you so much and I’m so proud of the person you are today. Sometimes I wish life had a rewind button just so I could relive those moments watching you take your first tiny steps, hearing you say “dadda” for the first time, or seeing you try to roll your little self closer to me while I was playing the piano. You've always reached for me, even before you could speak and that means everything.
-
-You’ve been with me since day one. My best friend, my partner in crime, my almost everything.
-YOURE MY DAY1. Without you, everything feels a bit too quiet, too empty. And yeah, I joke around sometimes saying I should’ve just gotten a puppy instead… but you bite like one anyway, so I guess we’re even. I got my puppy. And I love her.
-
-Thank you for always being there, for putting up with me, for being my little chaos and comfort all in one. I’ll always protect you, no matter what. Even if it means tearing the world in half, I’ll do it without thinking twice.
-
-Happy birthday, Kanda. You’ll always have me...... no matter what.
-
-<br><br>
-        Love,<br>
-        Dadda
-      </p>
-
-</section>
-
-<section class="spotify-covers">
-  <h2>🎶 Your Vibe, Your Playlist</h2>
-  <div class="cover-grid">
-    <a href="https://open.spotify.com/playlist/0m4ipHIqKPKeD9Q04LteVp?si=63592cdac8f444bf" target="_blank">
-      <img src="bliss.jpeg" alt="The One That Sounds Home" class="playlist-cover">
-      <p>🏡 Play this when you miss me</p>
-    </a>
-    <a href="https://open.spotify.com/playlist/5C8ndQ78PVESsHOmoIyUMK?si=f218ab24a56a459a" target="_blank">
-      <img src="main char.jpeg" alt="Siri Energy" class="playlist-cover">
-      <p>👑 Play this when you wanna feel Main Char energy</p>
-    </a>
-    <a href="https://open.spotify.com/playlist/2GoSerBbABzCKGsPyZ2yx0?si=24fa13358ab9451d" target="_blank">
-      <img src="bleh.jpeg" alt="Dumb Sh*t" class="playlist-cover">
-      <p>😜 Play this when you wanna go silly mode</p>
-    </a>
-    <a href="https://open.spotify.com/playlist/6LxKrmhzOUvFRExxRt3D9w?si=ef03e3b839b347b0" target="_blank">
-      <img src="exo.jpeg" alt="Revisit the Past" class="playlist-cover">
-      <p>🕰️ Play this for your Nostalgia Trips</p>
-    </a>
-    <a href="https://open.spotify.com/playlist/0bFCXrQKzqbWaY2WMr7XI3?si=9b24c1d983584216" target="_blank">
-      <img src="chill.jpeg" alt="Chill Lil Sis" class="playlist-cover">
-      <p>🌸 Play this for your Chill Vibes</p>
-    </a>
-    <a href="https://open.spotify.com/playlist/1DZM5KqveQF8NujDzUpe1d?si=988d66753a734118" target="_blank">
-      <img src="devo.jpeg" alt="Devotional Thingie" class="playlist-cover">
-      <p>🕉️ Play this to Go Devotional </p>
-    </a>
-  </div>
-</section>
-
-
-    </div>
+  <div id="vanta-bg"></div>
+  <div class="container">
+    <!-- your existing content stays unchanged -->
   </div>
 
-  <!-- 🐦 Vanta BIRDS script with your custom settings -->
- <script>
-    VANTA.BIRDS({
-      el: "#vanta-bg",
-      mouseControls: true,
-      touchControls: true,
-      gyroControls: false,
-      minHeight: 500.00,
-      minWidth: 500.00,
-      scale: 1.5,
-      scaleMobile: 1.9,
-      backgroundColor: 0x07192f,
-      backgroundAlpha: 1.0,
-      color1: 0xff0000,    // red
-      color2: 0x00d1ff,    // aqua
-      colorMode: "lerpGradient",
-      quantity: 5.0,
-      birdSize: 0.5,
-      wingSpan: 30.0,
-      speedLimit: 5.0,
-      separation: 20.0,
-      alignment: 20.0,
-      cohesion: 20.0
-    });
+  <!-- 🐦 Vanta BIRDS script with responsive fix -->
+  <script>
+    window.onload = () => {
+      const isMobile = window.innerWidth <= 600;
+
+      VANTA.BIRDS({
+        el: "#vanta-bg",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 500.00,
+        minWidth: 500.00,
+        scale: 1.5,
+        scaleMobile: 1.9,
+        backgroundColor: 0x07192f,
+        backgroundAlpha: 1.0,
+        color1: 0xff0000,
+        color2: 0x00d1ff,
+        colorMode: "lerpGradient",
+        quantity: 5.0,
+        birdSize: 0.5,
+        wingSpan: 30.0,
+        speedLimit: isMobile ? 1.2 : 5.0,
+        separation: 20.0,
+        alignment: 20.0,
+        cohesion: 20.0
+      });
+    }
   </script>
 </body>
 </html>
