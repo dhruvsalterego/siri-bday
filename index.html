@@ -239,6 +239,8 @@
     <!-- 📸 Timeline -->
     <section class="photo-timeline">
       <h2>🌸 Memories Through the Years</h2>
+	   <div class="marquee-wrapper">
+    <div class="marquee-track"> 
       <div class="timeline-card">
         <img src="her first smile shot on the first iphone.jpg" alt="Her first smile shot on the iPhone">
         <div class="card-content">
@@ -278,7 +280,8 @@
           <p>First iPad photo </p>
         </div>
       </div>
-
+</div>
+  </div>
     </section>
 
     <!-- 💌 Wishes -->
@@ -380,7 +383,8 @@ Happy birthday, Kanda. You’ll always have me...... no matter what.
       quantity: 5.0,
       birdSize: 0.5,
       wingSpan: 30.0,
-      speedLimit: 5.0,
+      speedLimit: isMobile? 1.2: 5.0,
+	    
       separation: 20.0,
       alignment: 20.0,
       cohesion: 20.0
